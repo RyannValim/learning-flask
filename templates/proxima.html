@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang=pt-br>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Próxima página</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='proxima.css') }}">
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>Próxima página</h1>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <p>Esta é a próxima página, para acessar a página inicial, clique no link abaixo:</p><br>
+            <a href="{{ url_for('index') }}">Página inicial</a>
+        </section>
+    </main>
+    <footer>
+        <p>&copy;Todos os direitos reservados - 2025
+    </footer>
+</body>
+</html>
