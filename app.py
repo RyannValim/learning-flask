@@ -11,5 +11,9 @@ def index():
 def proxima():
     return render_template("proxima.html")
 
+@app.route("/outra_rota")
+def outra_rota():
+    return render_template("outra_rota.html")
+
 if __name__ == "__main__":
     app.run(debug=True)

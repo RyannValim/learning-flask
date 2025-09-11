@@ -14,8 +14,10 @@
     </header>
     <main>
         <section>
-            <p>Esta é a página inicial, para acessar a segunda página, clique no link abaixo:</p><br>
-            <a href="{{ url_for('proxima') }}">Próxima página</a>
+            <p>Esta é a página inicial, para acessar a segunda página, clique no link abaixo:</p>
+            <a href="{{ url_for('proxima') }}">Próxima página</a><br><br>
+            <p>Caso queira acessar outra rota, clique no link abaixo:</p>
+            <a href="{{ url_for('outra_rota') }}">Outra rota</a>
         </section>
     </main>
     <footer>
