@@ -1,0 +1,13 @@
+Com o apoio do ChatGPT, conseguir entender que o processo de mudança de páginas foi feito utilizando rotas, que são diferentes caminhos da aplicação que o navegador ou o cliente pode acessar. Neste projeto há três rotas:
+
+	- Rota padrão: http://localhost:5000/ -> esta é a rota principal, a página inicial do sistema.
+	- Rota da próxima página: http://localhost:5000/proxima -> rota para a segunda página.
+	- Rota da outra página: http://localhost:5000/outra_rota -> rota alternativa para uma outra página.
+
+Uma template pode ser caracterizada como uma página, ou seja, uma nova rota para ser acessada. Cada uma destas rota listadas acima acessa uma template diferente e, utilizando o decorador "@app.route" e o método "render_template()", ambos importados do framework flask, é possível utilizar uma função em python para definir esta nova rota, como no exemplo abaixo:
+
+	*no arquivo "app.py":
+
+		@app.route("/proxima")
+		def proxima():
+			return render_template("proxima.html")
